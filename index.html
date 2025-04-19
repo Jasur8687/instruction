@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Инструкция по игре "Мины"</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 20px;
+      background: radial-gradient(circle at center, #0f0f0f, #000);
+      color: white;
+      font-family: sans-serif;
+    }
+    h2 {
+      text-align: center;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 24px;
+    }
+
+    .card-container {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .card {
+      border-radius: 16px;
+      overflow: hidden;
+      cursor: pointer;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      transition: transform 0.3s ease;
+    }
+
+    .card-header {
+      padding: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      background-color: #222;
+    }
+
+    .card-content {
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      padding: 0 20px;
+      transition: max-height 0.6s ease, opacity 0.6s ease, padding 0.3s ease;
+    }
+
+    .card.expanded .card-content {
+      max-height: 500px;
+      opacity: 1;
+      padding: 20px;
+    }
+
+    .card-content img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        margin-top: 10px;
+        object-fit: cover;
+        display: block;
+      }
+      
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 20px;
+      }
+
+      .card-header {
+        font-size: 16px;
+        padding: 16px;
+      }
+
+      .card-content {
+        font-size: 14px;
+        padding: 0 16px;
+      }
+
+      .card.expanded .card-content {
+        padding: 16px;
+      }
+    }
+
+    .video-wrapper {
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+    }
+    
+    #videoInstruction iframe {
+      max-width: 100%;
+      height: auto;
+      aspect-ratio: 9 / 16;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+    
+  </style>
+</head>
+<body>
+  <section id="videoInstruction">
+    <h2>Тарзи регистрация кардан ✅</h2>
+    <div class="video-wrapper">
+      <iframe 
+        width="315" height="560"
+        src="https://www.youtube.com/embed/Ue9ZZkyIsjE?si=F9zRzCCQnfKIOgnP"
+        title="Пополнение 1Win через Алиф Банк"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  <hr>
+    <h2>Тарзи пул пур кардан 🚀</h2>
+    <div class="video-wrapper">
+      <iframe 
+        width="315" height="560"
+        src="https://www.youtube.com/embed/jnK4N3ZBJ84?si=CzZINTLdCZhBNZMN"
+        title="Пополнение 1Win через Дусти Бонк"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+  <br>
+  <hr style="color: red;">
+  
+  
+  <h1>Как играть в "Мины"</h1>
+  <p style="text-align: center;">(хамаи вкладкахо кушода мешаванд)⬇️</p>
+  <div class="card-container">
+    <div class="card">
+      <div class="card-header">Интихоби бози</div>
+      <div class="card-content">
+        Аввал бозиро интихоб мекунем (мини)
+        <img src="in5.jpg" alt="Начало игры">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">микдори минахо</div>
+      <div class="card-content">
+       Мисол агар дар бозии шумо 1 мина бошад , мо да бот 7 ⭐ - ро интихоб мекунем, ага 2-3 мина бошад 3⭐-ро 
+        (и так чанкадаре ки мина бисёр боша хамока ситораро кам мекунем)
+        <img src="in4.jpg" alt="Игровое поле">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">Фоизи гузариш</div>
+      <div class="card-content">
+      Будьте аккуратны! ага аз 98% поён бошад сигнали навро мегирем
+        <img src="in1.jpg" alt="Мины">
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">98 - 100 %</div>
+      <div class="card-content">
+        ага 100% бошад  бахузур мегирем 
+        <img src="in2.jpg" alt="Забрать выигрыш">
+      </div>
+    </div>
+    <div class="card">
+    <div class="card-header">Ё ин ки 98%</div>
+      <div class="card-content">
+        хархел стратегия кор кунетон , 98% хам хуб мебошад
+        <img src="in3.jpg" alt="Стратегии">
+      </div>
+    </div>
+    <div class="card">
+        <div class="card-header">Тема</div>
+        <div class="card-content">
+         Тема барои хушхолии щумо ба чашмтон кадоме фора хамура монед
+         
+          <img src="im6.jpg" alt="">
+        </div>
+      </div>
+  </div>
+
+  <script>
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.addEventListener('click', () => {
+        card.classList.toggle('expanded');
+      });
+    });
+  </script>
+
+</body>
+</html>
